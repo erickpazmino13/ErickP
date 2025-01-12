@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+    <head> 
+        <title>Publicidad</title>
+          <style>
+    table {
+      border: #b2b2b2 1px solid;
+    }
+    td, th {
+      border: black 1px solid;
+    }
+    colgroup {
+      background-color: lightgrey;
+    }
+    col {
+      background-color: lightblue;
+    }
+
+
+  @media screen and (max-width: 400px) {
+  html {
+    background-color: lightblue;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  html {
+    background-color: lightcoral;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  html {
+    background-color: lightgreen;
+  }
+}
+  </style>
+</head>
+
+
+    <body>
+
+<?php
+    if($_POST["message"]) {
+        mail("jaki_navarrete@hotmail.com", "Here is the subject line",$_POST["insert your message here"]. "From: jaki_navarrete@hotmail.com");
+    }
+?>
+
+
+        <center><img src="Imagenes/noti.jpg" alt="MDN"></center>
+         <p align="center"> 
+       Las noticias más importantes - La Nación digital
+         </p>
+         <p align="justify"> 
+   A la fecha:
+         </p>
+
+
+<table border="1">
+
+  <caption>TODAS LAS NOTICIAS RELEVANTES</caption>
+  <colgroup span="2"></colgroup>
+  <col>
+  <tr>      
+  <col span="2" class="fondo">
+
+  <tr>
+    <td>Ultima Hora</td>
+    <td>EN VIVO</td>
+    <td>ESTADISTICAS </td>
+    <td>Nueva </td>
+    <td>SALUD </td>
+  </tr>
+  <tr>
+    <td><center><img src="Imagenes/not1.jpg" alt="MDN"></center></td>
+    <td><center><img src="Imagenes/not2.jpg" alt="MDN"></center></td>
+    <td><center><img src="Imagenes/not3.jpg" alt="MDN"></center></td>
+    <td><center><img src="Imagenes/not4.jpg" alt="MDN"></center></td>
+    <td> <center><img src="Imagenes/not5.jpg" alt="MDN"></center></td>
+  </tr>
+    <tr>
+    <td><center><img src="Imagenes/noti.jpg" alt="MDN"></center></td>
+    <td><center><img src="Imagenes/not6.jpg" alt="MDN"></center></td>
+    <td><center><img src="Imagenes/noti.jpg" alt="MDN"></center></td>
+    <td><center><img src="Imagenes/noti.jpg" alt="MDN"></center> </td>
+    <td> <center><img src="Imagenes/noti.jpg" alt="MDN"></center></td>
+  </tr></colgroup>
+</table>
+       <p align="justify"> 
+   Reportar algun problema en la comunidad:
+         </p>
+
+        <form action="Derecha.html" method="post"> <div class="elem-group"> <label for="name">Nombre</label> <input type="text" id="name" name="visitor_name" placeholder="Nombre de ejemplo" pattern=[A-Z\sa-z]{3,20} required> </div> <div class="elem-group"> <label for="email">Correo electrónico</label> <input type="email" id="email" name="visitor_email" placeholder="ejemplo@email.com" required> </div> <div class="elem-group"> <label for="department-selection">Área a contactar</label> <select id="department-selection" name="concerned_department" required> <option value="">Selecciona un área</option> <option value="billing">Facturación</option> <option value="marketing">Ventas</option> <option value="technical support">Servicio al cliente</option> </select> </div> <div class="elem-group"> <label for="title">Motivo de contacto</label> <input type="text" id="title" name="email_title" required placeholder="Problema/Consulta" pattern=[A-Za-z0-9\s]{8,60}> </div> <div class="elem-group"> <label for="message">Solicitud</label> <textarea id="message" name="visitor_message" placeholder="Escribe tu mensaje aquí." required></textarea> </div> <button type="submit">Enviar mensaje</button></form>
+
+          <p align="justify">
+         . 
+        </p>
+          <p align="justify">
+          <div style="text-align: left; color: rgb(240, 140, 140);">
+
+        <a target="Derecha" href="Derecha.html"><span style="font-family: Times New
+        Roman; font-weight: bold; text-decoration:
+        underline;">INICIO</span></a>
+        <br style="font-family: Times New Roman;
+        font-weight: bold; text-decoration: underline;">
+                
+        </div></p>
+    </body>
+</html>
